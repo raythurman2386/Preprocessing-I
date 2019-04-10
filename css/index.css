@@ -134,19 +134,163 @@ html,
 body {
   height: 100%;
 }
-
 a {
   text-decoration: none;
   color: black;
 }
-
+/**************************************************************************/
+/*							CSS Starts Here								  */
+html {
+  font-size: 62.5%;
+}
+/*    Variables     */
+/*    Mixins    */
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
-  box-shadow: 0px 3px 3px #dc143c;
+  box-shadow: 0px 4px 4px 4px darkgray;
 }
 .container .main-header .top-nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 8px 12px;
+  margin-bottom: 10px;
+}
+.container .main-header .top-nav a {
+  font-size: 1.6rem;
+  padding: 8px 12px;
+  font-family: 'Quicksand', sans-serif;
+}
+.container .main-header .top-nav a:hover {
+  border: 1px solid crimson;
+  border-radius: 8px;
+  color: #fff;
+  background-color: crimson;
+}
+.container .cta {
+  background-color: crimson;
+  color: #fff;
+}
+.container .cta .cta-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.container .cta .cta-top h1 {
+  font-size: 4rem;
+  margin: 2rem 0;
+  font-family: 'Bitter', serif;
+}
+.container .cta .cta-top p {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+  font-family: 'Quicksand', sans-serif;
+}
+.container .cta .cta-bot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.container .cta .cta-bot p {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+  font-family: 'Quicksand', sans-serif;
+}
+.container .cta .cta-bot .btn {
+  border: none;
+  background-color: white;
+  padding: 12px 20px;
+  line-height: 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 3rem 0;
+}
+.container .cta .cta-bot .btn:hover {
+  box-shadow: 3px 3px 3px 3px darkred;
+}
+.container .about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem 0;
+  width: 98%;
+  vertical-align: top;
+}
+.container .about h2 {
+  font-family: 'Bitter', serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.container .about .left {
+  width: 60%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.container .about .right {
+  width: 25%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.container .work-history {
+  margin: 3rem 0;
+  width: 98%;
+  margin: 0 auto;
+}
+.container .work-history h2 {
+  font-size: 3rem;
+  font-family: 'Bitter', serif;
+}
+.container .work-history .cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+.container .work-history .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid crimson;
+  height: 200px;
+  width: 30%;
+  box-shadow: 0 4px 4px 4px darkgray;
+}
+.container .work-history .cards .card p {
+  font-size: 1.4rem;
+  font-family: 'Quicksand', sans-serif;
+}
+.container .contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem auto 1rem;
+  flex-direction: column;
+}
+.container .contact h2 {
+  font-size: 3rem;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+.container .contact .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 4rem;
+}
+.container .contact .icons a {
+  color: crimson;
+}
+.container .footer-content {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .footer-content p {
+  font-size: 1.6rem;
+  margin: 5rem 0;
 }
