@@ -177,6 +177,10 @@ html {
   margin: @centered;
   box-shadow: 0px 4px 4px 4px darkgray;
 
+  @media (max-width: 500px) {
+    max-width: 480px;
+  }
+
   .main-header {
     .top-nav {
       .flexed();
@@ -205,7 +209,8 @@ html {
   .cta {
     background-color: @main-color;
     color: @main-font-color;
-    // height: 300px;
+    width: 98%;
+    margin: @centered;
 
     .cta-top {
       .flexed();
@@ -215,11 +220,15 @@ html {
         font-size: 4rem;
         margin: 2rem 0;
         font-family: @main-header-font;
+
+        @media(max-width: 500px) {
+          font-size: 2.5rem;
+        }
       }
 
       p {
         font-size: 1.8rem;
-        margin: 2rem 0;
+        margin: 2rem .5rem;
         font-family: @main-font-family;
       }
     }
@@ -230,7 +239,7 @@ html {
 
       p {
         font-size: 1.8rem;
-        margin: 2rem 0;
+        margin: 2rem .5rem;
         font-family: @main-font-family;
       }
 
@@ -256,6 +265,13 @@ html {
     width: 98%;
     vertical-align: top;
 
+    @media(max-width: 500px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 98%;
+    }
+
     h2 {
       font-family: @main-header-font;
       font-size: 2rem;
@@ -266,12 +282,22 @@ html {
       width: 60%;
       font-size: 1.4rem;
       line-height: 2rem;
+
+      @media(max-width: 500px) {
+        align-self: center;
+        width: 98%;
+      }
     }
 
     .right {
       width: 25%;
       font-size: 1.4rem;
       line-height: 2rem;
+
+      @media(max-width: 500px) {
+        margin: 1rem 0;
+        width: 98%;
+      }
     }
   }
 
@@ -289,6 +315,10 @@ html {
       .flexed();
       margin-top: 2rem;
 
+      @media(max-width: 500px) {
+        flex-direction: column;
+      }
+
       .card {
         display: flex;
         flex-direction: column;
@@ -298,6 +328,11 @@ html {
         height: 200px;
         width: 30%;
         box-shadow: 0 4px 4px 4px darkgray;
+
+        @media(max-width: 500px) {
+          margin: 1rem 0;
+          width: 98%;
+        }
 
         p {
           font-size: 1.4rem;
