@@ -1,1 +1,344 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/**************************************************************************/
+/*							CSS Starts Here								  */
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #333;
+}
+/*    Variables     */
+/*    Mixins    */
+/* CSS */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px 4px darkgray;
+  background-color: #fff;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 480px;
+  }
+}
+.container .main-header .top-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+}
+.container .main-header .top-nav a {
+  padding: 8px 12px;
+  font-size: 1.6rem;
+  font-family: 'Quicksand', sans-serif;
+}
+.container .main-header .top-nav a:hover {
+  border: 1px solid crimson;
+  border-radius: 8px;
+  color: #fff;
+  background-color: crimson;
+}
+.container .cta {
+  background-color: crimson;
+  color: #fff;
+  width: 98%;
+  margin: 0 auto;
+}
+.container .cta .cta-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.container .cta .cta-top h1 {
+  font-size: 4rem;
+  margin: 2rem 0;
+  font-family: 'Bitter', serif;
+}
+@media (max-width: 500px) {
+  .container .cta .cta-top h1 {
+    font-size: 2.5rem;
+  }
+}
+.container .cta .cta-top p {
+  font-size: 1.8rem;
+  margin: 2rem 0.5rem;
+  font-family: 'Quicksand', sans-serif;
+}
+.container .cta .cta-bot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.container .cta .cta-bot p {
+  font-size: 1.8rem;
+  margin: 2rem 0.5rem;
+  font-family: 'Quicksand', sans-serif;
+}
+.container .cta .cta-bot .btn {
+  border: none;
+  background-color: white;
+  padding: 12px 20px;
+  line-height: 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 3rem 0;
+}
+.container .cta .cta-bot .btn:hover {
+  box-shadow: 3px 3px 3px 3px darkred;
+}
+.container .about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem 0;
+  width: 98%;
+  vertical-align: top;
+}
+@media (max-width: 500px) {
+  .container .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+  }
+}
+.container .about h2 {
+  font-family: 'Bitter', serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.container .about .left {
+  width: 60%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+@media (max-width: 500px) {
+  .container .about .left {
+    align-self: center;
+    width: 98%;
+  }
+}
+.container .about .right {
+  width: 25%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+@media (max-width: 500px) {
+  .container .about .right {
+    margin: 1rem 0;
+    width: 98%;
+  }
+}
+.container .work-history {
+  margin: 3rem 0;
+  width: 98%;
+  margin: 0 auto;
+}
+.container .work-history h2 {
+  font-size: 3rem;
+  font-family: 'Bitter', serif;
+}
+.container .work-history .cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  .container .work-history .cards {
+    flex-direction: column;
+  }
+}
+.container .work-history .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid crimson;
+  height: 200px;
+  width: 30%;
+  box-shadow: 0px 4px 4px 4px darkgray;
+}
+@media (max-width: 500px) {
+  .container .work-history .cards .card {
+    margin: 1rem 0;
+    width: 98%;
+  }
+}
+.container .work-history .cards .card p {
+  font-size: 1.4rem;
+  font-family: 'Quicksand', sans-serif;
+}
+.container .contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem auto 1rem;
+  flex-direction: column;
+}
+.container .contact h2 {
+  font-size: 3rem;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+.container .contact .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 4rem;
+}
+.container .contact .icons a {
+  color: crimson;
+}
+.container .footer-content {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .footer-content p {
+  font-size: 1.6rem;
+  margin: 5rem 0;
+}
